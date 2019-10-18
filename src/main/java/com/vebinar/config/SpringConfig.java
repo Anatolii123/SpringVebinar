@@ -1,6 +1,10 @@
 package com.vebinar.config;
 
+import com.vebinar.dao.UserDao;
+import com.vebinar.dao.UserDaoImpl;
 import com.vebinar.service.TestBean;
+import com.vebinar.service.UserService;
+import com.vebinar.service.UserServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -29,6 +33,16 @@ public class SpringConfig {
                 "INTERNSHIP", "internship");
         dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         return dataSource;
+    }
+
+    @Bean
+    public UserDao getUserDao() {
+        return new UserDaoImpl(getJdbcTemplate());
+    }
+
+    @Bean
+    public UserService getUserService() {
+        return new UserServiceImpl();
     }
 
 }
