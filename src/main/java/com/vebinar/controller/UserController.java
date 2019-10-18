@@ -1,4 +1,7 @@
 package com.vebinar.controller;
 
-public interface UserController {
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class UserController {
 }
