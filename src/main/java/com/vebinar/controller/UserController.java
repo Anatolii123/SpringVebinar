@@ -31,7 +31,7 @@ public class UserController {
         return "usersList";
     }
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/users/{id}")
     public String getById(@PathVariable("id") int id, Model model) {
         model.addAttribute("user", userService.getById(id));
         return "showUser";

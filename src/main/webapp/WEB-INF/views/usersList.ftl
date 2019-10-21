@@ -15,7 +15,7 @@
         </tr>
     <#list users as user>
          <tr>
-             <td><a href="/DemoTest_war/users/${user.id}"></a>${user.id}</td>
+             <td><a href="/DemoTest_war/users/${user.id}">${user.id}</a></td>
              <td>${user.name}</td>
              <td>${user.email}</td>
              <td>${user.age}</td>
