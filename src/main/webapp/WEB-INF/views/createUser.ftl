@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form name="user" action="/addUser" method="post">
+<form name="user" action="/DemoTest_war/addUser" method="post">
     <input type="text" title="Name" name="name">
     <input type="text" title="Email" name="email">
     <input type="text" title="Age" name="age">
