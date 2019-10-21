@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Starting Page</title>
 </head>
 <body>
     <h1>I'm first template!</h1>
